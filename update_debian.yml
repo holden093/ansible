@@ -1,0 +1,7 @@
+---
+- hosts: servers
+  become: yes
+  tasks:
+    - name: Update all packages
+      apt:
+        upgrade: 'yes'
